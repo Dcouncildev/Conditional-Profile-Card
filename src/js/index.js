@@ -15,7 +15,13 @@ function render(variables = {}) {
 
   let myLastname = "Boilett";
   if (variables.lastname != null) myLastname = variables.lastname;
-
+  let myrole = "";
+  if (variables.role != null) myrole=variables.role;
+  let country ="";
+  if (variables.country != null) country =variables.country;
+  let city= "";
+  if (variables.city != null) city = variables.country;
+  if (variables.city != null) city = varibales.city;
   let mySocialMeadiaPosition = "position right";
   if (variables.socialMediaPosition != null)
     mySocialMeadiaPosition = variables.socialMediaPosition;
@@ -36,8 +42,8 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${myName} ${myLastname}</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h2>${myrole}</h2>
+          <h3>${city}</h3>
           <ul class="${mySocialMeadiaPosition}">
             <li><a href="https://twitter.com/${twitter}"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://github.com/${github}"><i class="fa fa-github"></i></a></li>
